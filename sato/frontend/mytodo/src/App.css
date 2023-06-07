@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  color: #f7f7f7;
+  min-height: 100vh;
+  background: #ffffff;
+  text-rendering: optimizeSpeed;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  padding: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  background: #ffffff;
+}
+
+h1 {
+  text-align: left;
+  font-weight: bold;
+  color: black;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.todos-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+input {
+  width: 450px;
+  padding: 0.8em;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 120px;
+  padding: 0.8em;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+input,
+button {
+  font-size: 1em;
+  appearance: none;
+  color: black;
+  background: transparent;
+  border: 1px solid #828691;
+}
+
+.add-button {
+  color: black;
+  border-left: none;
+}
+
+.delete-button {
+  color: black;
+}
+
+.delete-button:hover {
+  color: #252525;
+  background: white;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+li {
+  width: 450px;
+  padding: 0.85em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  background: white;
+  color: black;
+  letter-spacing: 0.02rem;
+  transition: all 0.3s ease-out;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+.empty {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 0.2rem;
+}
